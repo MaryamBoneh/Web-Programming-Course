@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        td{
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body dir="rtl">
+    <table border="1px">
+        <tr>
+            <td>
+                نام
+            </td>
+            <td>
+                <input type="text" placeholder="name">
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                ایمیل
+            </td>
+            <td>
+                <input type="email" placeholder="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" placeholder="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                تاریخ تولد
+            </td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                سن
+            </td>
+            <td>
+                <input type="text" placeholder="age">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                رنگ مورد علاقه
+            </td>
+            <td>
+                <input type="color" value="#13962d">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ماسک مزنی یا نه یره؟
+            </td>
+            <td>
+                <input type="radio" id="yes" name="fav_language" value="yes">
+                <label for="yes">ماسک نمی‌زنوم 😶</label>
+                <br>
+                <input type="radio" id="no" name="fav_language" value="no">
+                <label for="no">ماسک می‌زنوم 😷</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                میوه مورد علاقه
+            </td>
+            <td>
+                <input type="checkbox" id="orange" name="orange" value="Bike">
+                <label for="orange"> پرتقال 🍊</label>
+                <input type="checkbox" id="banana" name="banana" value="Car">
+                <label for="banana"> موز 🍌</label>
+                <input type="checkbox" id="apple" name="apple" value="Car">
+                <label for="apple"> سیب 🍏</label>
+                <input type="checkbox" id="peach" name="peach" value="Boat">
+                <label for="peach"> هلو 🍑</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                کشور
+            </td>
+            <td>
+                <select name="contries" id="contries">
+                    <option value="iran"> ایران 🇮🇷</option>
+                    <option value="germany">آلمان 🇩🇪</option>
+                    <option value="italy">ایتالیا 🇮🇹</option>
+                    <option value="us">آمریکا 🇺🇸</option>
+                  </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                زندگی‌نامه
+            </td>
+            <td>
+                <textarea placeholder="هرچه می‌خواهد دل تنگت بگو" name="" id="" cols="20" rows="6"></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
