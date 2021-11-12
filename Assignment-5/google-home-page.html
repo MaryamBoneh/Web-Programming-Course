@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <style>
+        .main{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+        }
+        
+        .header{
+            display: flex;
+            flex: 1;
+            align-items: center;
+        }
+        
+        .header button{
+            margin-left: 25px;
+            margin-right: 10px;
+        }
+        .header span{
+            margin-left: 25px;
+        }
+        .header i{
+            margin-left: 25px;
+        }
+
+        .main-section{
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 200px;
+        }
+
+        .main-section button{
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 0;
+        }
+
+        .main-section input{
+            width: 50%;
+            height: 48px;
+            border: 0;
+            border-radius: 30px;
+            box-shadow: -1px 1px 5px 2px rgba(0,0,0,0.25);
+            margin: 25px;
+        }
+        .footer{
+            display: flex;
+            position: absolute;
+            bottom: 0px;
+            flex: 1;
+            background-color: #f1f1f1;
+            width: 100%;
+            padding: 10px 0;
+            color: #707070;
+            flex-direction: row-reverse;
+        }
+
+        .footer span{
+            padding: 15px;
+        }
+
+        .sign-in{
+            background-color: rgb(40, 129, 245);
+            width: 100px;
+            height: 48px;
+            border: 0px;
+            border-radius: 10px;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body dir="rtl">
+    <div class="main">
+        
+        <div class="header">
+            <button class="sign-in">Sign in</button>
+            <i class="material-icons">apps</i>
+            <span>Images</span>
+            <span>Gmail</span>
+        </div>
+        
+        <div class="main-section">
+            <img src="img/Google.png" width="300px" alt="">
+        
+            <input type="text">
+            <span>
+                <button>I'm Feeling Lucky</button>
+                <button>Google Search</button>
+            </span>
+        </div>
+
+        <div class="footer">
+            <span>
+                About
+            </span>
+            <span>
+                Advertising
+            </span>
+            <span>
+                Business
+            </span>
+            <span>
+                How Search works
+            </span>
+        </div>
+
+    </div>
+</body>
+</html>
