@@ -7,6 +7,9 @@
 
 <img width="1440" alt="Screen Shot 1400-08-25 at 13 19 12" src="https://user-images.githubusercontent.com/72157067/141962394-b89278d7-c2f5-40c5-a0cf-7a77b8e90745.png">
 
+### Love for Ever - Logo
+
+<img width="342" alt="Screen Shot 1400-08-25 at 19 16 31" src="https://user-images.githubusercontent.com/72157067/142018329-3589a7cc-9e2e-4f25-bf73-a62d03b29e13.png">
 
 ## Assignment 5
 
