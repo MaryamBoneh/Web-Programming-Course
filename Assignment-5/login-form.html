@@ -8,21 +8,136 @@
 
     <style>
         .back{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             height: 100vh;
-            background-image: linear-gradient(to bottom, #ff00e6, #204ae6);
+            background-image: linear-gradient(to bottom, #d64cc8, #446bf7);
         }
 
         .form{
+            display: flex;
+            width: 370px;
+            height: 500px;
+            background-color: #fff;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 25px;
+            border-radius: 5px;
+            font-family: Arial;
+        }
+        
+        .title{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .login-btn{
+            width: 62%;
+            background-color: #c02ab1;
+            color: #fff;
+            border: 0px;
+            border-radius: 3px;
+            height: 48px;
+        }
+        
+        input{
+            width: 60%;
+            height: 48px;
+            background-color: #f1f1f1;
+            margin-top: 20px;
+            border: 0px;
+            padding: 0px 5px;
+        }
+        
+        span{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        .inputs{
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        
+        .btn-loginWith{
+            margin-bottom: 50px;
+        }
+        
+        .btn-loginWith button{
+            width: 30%;
+            background-color: #fff;
+            border: #f1f1f1 solid 1px;
+            border-radius: 3px;
+            padding: 6px 8px;
+        }
+        
+        span p{
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+        
+        .facebook{
+            color: #333d97;
+            margin-right: 10px;
+        }
+        
+        .checkbox{
+            width: 14px;
             
         }
-            
+        
+        span label{
+            font-size: 0.6rem;
+            color: #aaa;
+            margin-top: 15px;
+        }
+
+        span span{
+            justify-content: flex-start;
+            padding-left: 35%;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="back">
         <div class="form">
-
+            <div class="title">
+                <b>LOGIN</b>
+            </div>
+            <span class="inputs">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <span>
+                    <input class="checkbox" type="checkbox" id="remember" name="remember" value="no" checked>
+                    <label for="remember"> Remember me</label>
+                </span>
+                <button class="login-btn">LOGIN</button>
+            </span>
+            <span>
+                <p>Or login with:</p>
+            </span>
+            <span class="btn-loginWith">
+                <button class="facebook" >
+                    <img src="img/Facebook.png" width="15px" alt="">
+                    Facebook
+                </button>
+                <button>
+                    <img src="img/Logo.png" width="15px" alt="">
+                    Google
+                </button>
+            </span>
+            <span>
+                <p>Not a member? <u>Sign up now</u></p>
+            </span>
         </div>
     </div>
     
