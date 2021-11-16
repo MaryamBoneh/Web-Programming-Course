@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
@@ -108,6 +109,21 @@
             padding-left: 35%;
         }
 
+        .material-icons{
+            color: #aaa;
+        } 
+        
+        .email-icon{
+            position: absolute;
+            left: -600px;
+            top: 240px;
+        }
+       
+        .lock-icon{
+            position: absolute;
+            left: -600px;
+            top: 310px;
+        }
 
     </style>
 </head>
@@ -118,8 +134,14 @@
                 <b>LOGIN</b>
             </div>
             <span class="inputs">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="email" placeholder="        Email">
+                <span class="material-icons email-icon">
+                    email
+                </span>
+                <input type="password" placeholder="        Password">
+                <span class="material-icons lock-icon">
+                    lock
+                </span>
                 <span>
                     <input class="checkbox" type="checkbox" id="remember" name="remember" value="no" checked>
                     <label for="remember"> Remember me</label>
