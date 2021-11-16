@@ -1,0 +1,57 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.heart{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: #bd2a2a;
+    border-radius: 50%;
+}
+
+.square{
+    width: 127px;
+    height: 127px;
+    background-color: #bd2a2a;
+    transform: rotateZ(45deg);
+    position: absolute;
+    left: 74px;
+    top: 25px;
+    border-radius: 100% 0% 0% 0%;
+}
+
+.forever{
+    display: flex;
+}
+
+.monhani{
+    width: 100px;
+    height: 100px;
+    border: 0.5rem solid #bd2a2a;
+    border-radius: 50% 50% 0;
+}
+
+.chap{
+    transform: rotateZ(-45deg);
+}
+
+.rast{
+    transform: rotateZ(135deg);
+    position: absolute;
+    left: 160px
+}
+
