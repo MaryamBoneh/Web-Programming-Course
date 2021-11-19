@@ -1,5 +1,10 @@
 # Web Programming Course
 
+## Assignment 7
+
+![my milky way](https://user-images.githubusercontent.com/72157067/142686947-dcd2c7ab-ca95-4ef6-bd54-6b48e92f6b7b.png)
+
+
 
 ## Assignment 6
 
