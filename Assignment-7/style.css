@@ -41,19 +41,20 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-sizing: border-box;
     justify-content: space-around;
-    width: 96%;
-    height: 600px;
+    flex-wrap: wrap;
+    width: 100%;
     padding: 80px 30px;
 }
 
 .section-two .item{
     display: flex;
     flex-direction: column;
-    flex: 1;
+    box-sizing: border-box;
     align-items: center;
-    width: 320px;
-    height: 560px;
+    width: 25%;
+    height: 600px;
     margin: 10px;
     padding: 20px;
     box-shadow: 1px 1px 9px 0px #fff;
@@ -62,10 +63,9 @@ body{
 .description{
     display: flex;
     flex-direction: column;
-    flex: 1;
     align-items: center;
-    width: 350px;
-    height: 560px;
+    width: 25%;
+    height: 600px;
     padding: 20px;
     font-size: 1rem;
     line-height: 1.6;
@@ -92,7 +92,7 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     padding: 50px 0;
 }
 
@@ -108,12 +108,14 @@ body{
     width: 90%;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .member{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 20%;
 }
 
 .member img{
@@ -137,16 +139,17 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 550px;
+    /* height: 550px; */
 }
 
 .section-for .items{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
 }
 
 .section-for .title{
@@ -159,6 +162,7 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 25%;
+    margin: 30px;
     height: 350px;
     background-color: #000;
     box-shadow: 1px 1px 9px 0px #fff;
@@ -179,7 +183,9 @@ body{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 450px;
+    padding: 100px 0px;
+    margin-bottom: 100px;
+    /* height: 450px; */
     background-image: url("img/milky_way_bazoo_2.jpeg");
     background-size: cover;
 }
@@ -284,4 +290,143 @@ body{
     50% {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .section-one{
+        font-size: 36px;
+        height: 400px;
+    }
+    
+    .header-menu{
+        font-size: 12px;
+        
+    }
+    .header-menu span{
+        margin: 10px;
+    }
+
+    .section-two .item{
+        width: 48%;
+        margin: 0;
+    }
+
+    .description{
+        width: 43%;
+        margin: 0;
+    }
+    
+    .items .item{
+        width: 100%;
+    }
+
+    .item-i{
+        padding: 5px;
+    }
+
+    .section-six h2 {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
+    .member{
+        width: 33%;
+        margin-bottom: 20px;
+    }
+
+    .section-five{
+        margin-bottom: 0px;
+        background-size: contain;
+        height: 300px;
+        background-repeat: no-repeat;
+    }
+
+    .contact-us{
+        flex-direction: column;
+    }
+
+    .contact-us .right, .contact-us .left{
+        width: 80%;
+    }
+
+    .follow-us img{
+        width: 28px;
+    }
+
+    .follow-us{
+        margin-top: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .section-one{
+        font-size: 36px;
+        height: 400px;
+        background-size: cover;
+    }
+    
+    .header-menu{
+        font-size: 12px;
+        
+    }
+    .header-menu span{
+        margin: 10px;
+    }
+
+    .section-two{
+        padding: 30px;
+    }
+
+    .section-two .item{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .items .item{
+        width: 100%;
+    }
+
+    .item-i{
+        padding: 5px;
+    }
+
+    .section-six h2 {
+        padding-left: 40px;
+        font-size: 18px;
+    }
+
+    .member{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .section-five{
+        margin-bottom: 0px;
+        background-size: contain;
+        height: 155px;
+        background-repeat: no-repeat;
+    }
+
+    .contact-us{
+        flex-direction: column;
+    }
+
+    .contact-us .right, .contact-us .left{
+        width: 80%;
+    }
+
+    .follow-us img{
+        width: 28px;
+    }
+
+    .follow-us{
+        margin-top: 50px;
+    }
+
+    .description{
+        height: 450px;
+        width: 100%;
+    }
+    
 }
