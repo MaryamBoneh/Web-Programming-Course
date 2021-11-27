@@ -16,6 +16,7 @@ body{
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
 }
 
@@ -90,9 +91,33 @@ h6{
 .cat-item{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .cat-item img{
     width: 50px;
+    margin-bottom: 10px;
+}
+
+.section-one{
+    display: flex;
+    width: 90%;
+    height: 500px;
+    background-color: #f5f5f5;
+    border-radius: 0 0 120px 0;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.section-one-left{
+    display: flex;
+    width: 50%;
+    
+}
+
+.section-one-right{
+    display: flex;
+    width: 50%;
+    
 }
