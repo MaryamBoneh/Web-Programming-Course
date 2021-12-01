@@ -430,7 +430,7 @@ footer{
     width: 20%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
 
     .header-top-row{
         height: 180px;
@@ -576,6 +576,10 @@ footer{
 }
 
 @media (max-width: 450px) {
+
+    .section-two .item{
+        width: 48%;
+    }
   
     .section-three-left img{
         width: 90%;
