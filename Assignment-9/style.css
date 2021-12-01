@@ -101,6 +101,7 @@ h6{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .cat-item img{
@@ -127,15 +128,27 @@ h6{
     
 }
 
+.overly{
+    width: 80%;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+    position: absolute;
+    top: 70%;
+    border-radius: 30px;
+    backdrop-filter: blur(2rem);
+    box-sizing: border-box;
+}
+
 .section-one-rigth{
     display: flex;
     width: 50%;
     height: 100%;
     align-items: flex-start;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin-right: 5%;
-    
+    margin-top: 5%;
 }
 
 .section-one-left img{
@@ -166,6 +179,7 @@ h6{
     box-sizing: border-box;
     padding: 10px;
     margin-left: -50px;
+    box-shadow: rgb(58 61 66 / 6%) 0px 1px 0px, rgb(0 0 0 / 20%) 0px 4px 16px -8px;
 }
 
 .search-btn{
@@ -428,6 +442,20 @@ footer{
 
 .footer-left img{
     width: 20%;
+}
+
+.scroll-to-top{
+    width: 60px;
+    height: 30px;
+    position: fixed;
+    background-color: #444;
+    bottom: 0;
+    left: 5%;
+    border-radius: 10px 10px 0 0px;
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1023px) {
