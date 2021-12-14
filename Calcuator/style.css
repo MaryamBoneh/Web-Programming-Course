@@ -1,0 +1,37 @@
+
+
+body{
+    background-image: linear-gradient(to bottom left, var(--gradient-color-stops));
+    --gradient-from-color: #34393f;
+    --gradient-to-color: #191a1d;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(52, 57, 63, 0));
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#container{
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+
+button{
+    box-shadow: -0.25rem -0.25rem 0.5rem hsl(0deg 0% 100% / 7%), 
+                0.25rem 0.25rem 0.5rem rgb(0 0 0 / 12%), 
+                -0.75rem -0.75rem 1.75rem hsl(0deg 0% 100% / 7%), 
+                0.75rem 0.75rem 1.75rem rgb(0 0 0 / 12%), 
+                inset 8rem 8rem 8rem rgb(0 0 0 / 5%), 
+                inset -8rem -8rem 8rem hsl(0deg 0% 100% / 5%);
+                
+    color: #fff;
+    background-color: #191a1d;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.screen{
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+}
