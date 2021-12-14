@@ -1,7 +1,7 @@
 # Web Programming Course
 
 
-## Snaaap!
+## Snaaapp!
 
 ![Uploading snapp-landing.png…]()
 
