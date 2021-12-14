@@ -3,7 +3,7 @@
 
 ## Snaaap!
 
-![snappfood-landing](https://user-images.githubusercontent.com/72157067/143771808-384d2703-846c-4483-9ca9-39723a1af0b2.png)
+![Uploading snapp-landing.png…]()
 
 
 ## Assignment 7 and 8
