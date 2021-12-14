@@ -18,9 +18,11 @@
         <div class="header">
             <div class="header-top-row">
                 <div class="logo"><img src="assets/images/logo.png" alt="snapp food logo"></div>
-                <div class="address">
+                <span id="dark_mode" class="material-icons">dark_mode</span>
+                <span id="light_mode" class="material-icons">light_mode</span>
+                <div id="address">
                     <span>
-                        <svg width="23px" height="23px" viewBox="0 0 18 18" fill="rgba(24,28,32,0.2)">
+                        <svg class="svg" width="23px" height="23px" viewBox="0 0 18 18" fill="rgba(24,28,32,0.2)">
                             <path
                                 d="M3.22582 9.83268H1.50008C1.03984 9.83268 0.666748 9.45959 0.666748 8.99935C0.666748 8.53911 1.03984 8.16602 1.50008 8.16602H3.22582C3.59125 5.61127 5.61201 3.59052 8.16675 3.22509V1.49935C8.16675 1.03911 8.53984 0.666016 9.00008 0.666016C9.46032 0.666016 9.83342 1.03911 9.83342 1.49935V3.22509C12.3882 3.59052 14.4089 5.61127 14.7743 8.16602H16.5001C16.9603 8.16602 17.3334 8.53911 17.3334 8.99935C17.3334 9.45959 16.9603 9.83268 16.5001 9.83268H14.7743C14.4089 12.3874 12.3882 14.4082 9.83342 14.7736V16.4993C9.83342 16.9596 9.46032 17.3327 9.00008 17.3327C8.53984 17.3327 8.16675 16.9596 8.16675 16.4993V14.7736C5.61201 14.4082 3.59125 12.3874 3.22582 9.83268ZM9.00008 13.166C11.3013 13.166 13.1667 11.3005 13.1667 8.99935C13.1667 6.69816 11.3013 4.83268 9.00008 4.83268C6.69889 4.83268 4.83342 6.69816 4.83342 8.99935C4.83342 11.3005 6.69889 13.166 9.00008 13.166ZM9.00008 10.666C8.07961 10.666 7.33342 9.91982 7.33342 8.99935C7.33342 8.07887 8.07961 7.33268 9.00008 7.33268C9.92056 7.33268 10.6667 8.07887 10.6667 8.99935C10.6667 9.91982 9.92056 10.666 9.00008 10.666Z">
                             </path>
@@ -39,8 +41,8 @@
                     <input type="text" placeholder="جست‌وجو در اسنپ‌فود   ">
                 </div>
                 <div class="registrations">
-                    <div class="food-registration">
-                        <svg width="24" height="26" viewBox="0 0 24 26" fill="#3A3D42" xmlns="http://www.w3.org/2000/svg">
+                    <div id="food-registration">
+                        <svg class="svg" width="24" height="26" viewBox="0 0 24 26" fill="#3A3D42" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M3.10557 3.22149C3.27497 2.8827 3.62123 2.6687 4 2.6687H19.9987C20.3773 2.6687 20.7235 2.88259 20.893 3.22125L22.8943 7.22124C22.9638 7.36016 23 7.51336 23 7.6687V8.6687C23 9.62235 22.6186 10.4869 22 11.1182V21.6687C22 22.221 21.5523 22.6687 21 22.6687H15C14.4477 22.6687 14 22.221 14 21.6687V17.1687C14 16.0641 13.1046 15.1687 12 15.1687C10.8954 15.1687 10 16.0641 10 17.1687V21.6687C10 22.221 9.55229 22.6687 9 22.6687H3C2.44772 22.6687 2 22.221 2 21.6687V11.1182C1.38141 10.4869 1 9.62235 1 8.6687V7.6687C1 7.51345 1.03615 7.36034 1.10557 7.22149L3.10557 3.22149ZM4 12.1333V20.6687H8V17.1687C8 14.9596 9.79086 13.1687 12 13.1687C14.2091 13.1687 16 14.9596 16 17.1687V20.6687H20V12.1333C19.8367 12.1566 19.6698 12.1687 19.5 12.1687C18.5207 12.1687 17.6353 11.7665 17 11.1182C16.3647 11.7665 15.4793 12.1687 14.5 12.1687C13.5207 12.1687 12.6353 11.7665 12 11.1182C11.3647 11.7665 10.4793 12.1687 9.5 12.1687C8.52065 12.1687 7.63526 11.7665 7 11.1182C6.36474 11.7665 5.47935 12.1687 4.5 12.1687C4.33024 12.1687 4.1633 12.1566 4 12.1333ZM21 7.90491V8.6687C21 9.49713 20.3284 10.1687 19.5 10.1687C18.6716 10.1687 18 9.49713 18 8.6687C18 8.11642 17.5523 7.6687 17 7.6687C16.4477 7.6687 16 8.11642 16 8.6687C16 9.49713 15.3284 10.1687 14.5 10.1687C13.6716 10.1687 13 9.49713 13 8.6687C13 8.11642 12.5523 7.6687 12 7.6687C11.4477 7.6687 11 8.11642 11 8.6687C11 9.49713 10.3284 10.1687 9.5 10.1687C8.67157 10.1687 8 9.49713 8 8.6687C8 8.11642 7.55228 7.6687 7 7.6687C6.44772 7.6687 6 8.11642 6 8.6687C6 9.49713 5.32843 10.1687 4.5 10.1687C3.67157 10.1687 3 9.49713 3 8.6687V7.90477L4.61803 4.6687H19.3808L21 7.90491Z">
                             </path>
@@ -99,7 +101,7 @@
             </div>
         </div>
 
-        <div class="section-one">
+        <div id="section-one">
             <div class="section-one-rigth">
                 <div class="title">
                     <h1>
@@ -255,7 +257,7 @@
 
         </div>
 
-        <div class="section-three">
+        <div id="section-three">
             <div class="section-three-rigth">
                 <div class="title">
                     <h1>
@@ -266,7 +268,7 @@
                     با اپلیکیشن اسنپ‌فود به راحتی و با چند کلیک ساده می‌توانید رستوران‌ها، کافه‌ها، شیرینی‌فروشی‌ها و
                     سوپرمارکت‌های نزدیک خودتان را جست‌و‌جو کرده و از تجربه سفارش آسان از اسنپ‌فود لذت ببرید.
                 </div>
-                <div class="input-phone">
+                <div id="input-phone">
                     <span>برای دریافت لینک دانلود اپلیکیشن، شماره موبایلتان رو وارد کنید</span>
                     <span>
                         <input type="text" placeholder="09 *********">
@@ -290,7 +292,7 @@
             </div>
         </div>
         
-        <div class="section-four">
+        <div id="section-four">
             <div class="section-four-right">
                 <h1>
                     صاحب کسب و کار هستید؟
@@ -300,15 +302,15 @@
                 </h3>
 
                 <button>
-                    <svg width="24" height="26" viewBox="0 0 24 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="svg" width="24" height="26" viewBox="0 0 24 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M3.10557 3.22149C3.27497 2.8827 3.62123 2.6687 4 2.6687H19.9987C20.3773 2.6687 20.7235 2.88259 20.893 3.22125L22.8943 7.22124C22.9638 7.36016 23 7.51336 23 7.6687V8.6687C23 9.62235 22.6186 10.4869 22 11.1182V21.6687C22 22.221 21.5523 22.6687 21 22.6687H15C14.4477 22.6687 14 22.221 14 21.6687V17.1687C14 16.0641 13.1046 15.1687 12 15.1687C10.8954 15.1687 10 16.0641 10 17.1687V21.6687C10 22.221 9.55229 22.6687 9 22.6687H3C2.44772 22.6687 2 22.221 2 21.6687V11.1182C1.38141 10.4869 1 9.62235 1 8.6687V7.6687C1 7.51345 1.03615 7.36034 1.10557 7.22149L3.10557 3.22149ZM4 12.1333V20.6687H8V17.1687C8 14.9596 9.79086 13.1687 12 13.1687C14.2091 13.1687 16 14.9596 16 17.1687V20.6687H20V12.1333C19.8367 12.1566 19.6698 12.1687 19.5 12.1687C18.5207 12.1687 17.6353 11.7665 17 11.1182C16.3647 11.7665 15.4793 12.1687 14.5 12.1687C13.5207 12.1687 12.6353 11.7665 12 11.1182C11.3647 11.7665 10.4793 12.1687 9.5 12.1687C8.52065 12.1687 7.63526 11.7665 7 11.1182C6.36474 11.7665 5.47935 12.1687 4.5 12.1687C4.33024 12.1687 4.1633 12.1566 4 12.1333ZM21 7.90491V8.6687C21 9.49713 20.3284 10.1687 19.5 10.1687C18.6716 10.1687 18 9.49713 18 8.6687C18 8.11642 17.5523 7.6687 17 7.6687C16.4477 7.6687 16 8.11642 16 8.6687C16 9.49713 15.3284 10.1687 14.5 10.1687C13.6716 10.1687 13 9.49713 13 8.6687C13 8.11642 12.5523 7.6687 12 7.6687C11.4477 7.6687 11 8.11642 11 8.6687C11 9.49713 10.3284 10.1687 9.5 10.1687C8.67157 10.1687 8 9.49713 8 8.6687C8 8.11642 7.55228 7.6687 7 7.6687C6.44772 7.6687 6 8.11642 6 8.6687C6 9.49713 5.32843 10.1687 4.5 10.1687C3.67157 10.1687 3 9.49713 3 8.6687V7.90477L4.61803 4.6687H19.3808L21 7.90491Z">
                         </path>
                     </svg>
                     &nbsp;&nbsp;&nbsp;
-                    <h3>
+                    <h4>
                         ثبت‌نام فروشندگان
-                    </h3>
+                    </h4>
                 </button>
             </div>
             <div class="section-four-left">
@@ -456,7 +458,7 @@
             </div>
         </div>
 
-        <div class="scroll-to-top">
+        <div id="scroll-to-top">
             <span class="material-icons">expand_less</span>
         </div>
         <footer>
@@ -503,6 +505,83 @@
             </div>
         </footer>
     </div>
+
+
+    <script>
+        var dark_mode = document.getElementById("dark_mode");
+        var light_mode = document.getElementById("light_mode")
+        var section_one = document.getElementById("section-one")
+        var section_three = document.getElementById("section-three")
+        var section_four = document.getElementById("section-four")
+        var scroll_to_top = document.getElementById("scroll-to-top")
+        var address = document.getElementById("address")
+        var food_registration = document.getElementById("food-registration")
+        var input_phone = document.getElementById("input-phone")
+        var h6Elements = document.getElementsByTagName("h6");
+        var h3Elements = document.getElementsByTagName("h3");
+        var h1Elements = document.getElementsByTagName("h1");
+        var title = document.getElementsByClassName("title");
+        var description = document.getElementsByClassName("description");
+        var item = document.getElementsByClassName("item");
+        var svg = document.getElementsByClassName("svg");
+        
+        dark_mode.onclick = function () {
+            document.body.style.backgroundColor = "#363636";
+            light_mode.style.display = "block"
+            dark_mode.style.display = "none"
+            section_one.style.backgroundColor = "#565656";
+            section_three.style.backgroundColor = "#2a2a2a";
+            section_four.style.backgroundColor = "#242424";
+            scroll_to_top.style.backgroundColor = "#9b9b9b";
+            title[0].style.color = "#fff";
+            description[0].style.color = "#fff";
+            description[1].style.color = "#fff";
+            svg[0].style.fill = "#fff";
+            svg[1].style.fill = "#fff";
+            input_phone.style.color = "#d9d9d9";
+            food_registration.style.color = "#fff";
+            address.style.color = "#fff";
+
+            for(var i = 0; i < h1Elements.length; i++) {
+                h1Elements[i].style.color = "#fff";
+            }
+            for(var i = 0; i < h3Elements.length; i++) {
+                h3Elements[i].style.color = "#eee";
+            }
+            for(var i = 0; i < h6Elements.length; i++) {
+                h6Elements[i].style.color = "#fff";
+            }
+
+        }
+        
+        light_mode.onclick = function () {
+            document.body.style.backgroundColor = "#fff";
+            light_mode.style.display = "none"
+            dark_mode.style.display = "block"
+            section_one.style.backgroundColor = "#f5f5f5";
+            section_three.style.backgroundColor = "#f0f0f0";
+            section_four.style.backgroundColor = "#f5f5f5";
+            scroll_to_top.style.backgroundColor = "#444";
+            title[0].style.color = "#000";
+            description[0].style.color = "#707070";
+            description[1].style.color = "#707070";
+            svg[0].style.fill = "rgba(24,28,32,0.2)";
+            svg[1].style.fill = "#444";
+            input_phone.style.color = "#000";
+            food_registration.style.color = "#000";
+            address.style.color = "#000";
+
+            for(var i = 0; i < h1Elements.length; i++) {
+                h1Elements[i].style.color = "#707070";
+            }
+            for(var i = 0; i < h3Elements.length; i++) {
+                h3Elements[i].style.color = "#000";
+            }
+            for(var i = 0; i < h6Elements.length; i++) {
+                h6Elements[i].style.color = "#707070";
+            }
+        }
+    </script>
 </body>
 
 </html>

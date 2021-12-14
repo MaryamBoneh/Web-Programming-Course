@@ -42,7 +42,7 @@ body{
     flex-wrap: wrap;
 }
 
-.address{
+#address{
     display: flex;
     align-items: center;
 }
@@ -52,7 +52,7 @@ h6{
     color: #707070;
 }
 
-.address .material-icons{
+#address .material-icons{
     font-size: 18px;
     color: #ff00a6;
 }
@@ -76,9 +76,20 @@ h6{
     width: 80px;
 }
 
-.food-registration{
+#food-registration{
     display: flex;
     align-items: center;
+}
+
+#dark_mode{
+    cursor: pointer;
+    display: block;
+}
+
+#light_mode{
+    cursor: pointer;
+    display: none;
+    color: #f5f5f5;
 }
 
 .user-registration button{
@@ -115,7 +126,7 @@ h6{
 
 /* _________________________section-one______________________________ */
 
-.section-one{
+#section-one{
     display: flex;
     width: 90%;
     height: 600px;
@@ -138,7 +149,7 @@ h6{
     background-color: rgba(255, 255, 255, 0.6);
     z-index: 1;
     position: absolute;
-    top: 70%;
+    top: 85%;
     border-radius: 30px;
     backdrop-filter: blur(2rem);
     box-sizing: border-box;
@@ -209,6 +220,7 @@ h6{
 .section-two .item{
     display: flex;
     width: 15%;
+    background-color: #fff;
     box-sizing: border-box;
     position: relative;
     padding: 5px;
@@ -242,7 +254,7 @@ h6{
 
 /* _________________________section-three______________________________ */
 
-.section-three{
+#section-three{
     display: flex;
     width: 90%;
     height: 500px;
@@ -280,7 +292,7 @@ h6{
 }
 
 
-.section-three .link-btn{
+#section-three .link-btn{
     width: 100px;
     height: 40px;
     background-color: #ff00a6;
@@ -290,13 +302,13 @@ h6{
     padding: 8px;
 }
 
-.input-phone{
+#input-phone{
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-.input-phone input{
+#input-phone input{
     width: 400px;
     height: 48px;
     border: 0;
@@ -307,7 +319,7 @@ h6{
     margin-left: -105px;
 }
 
-.input-phone span{
+#input-phone span{
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -323,7 +335,7 @@ h6{
 
 /* _________________________section-four______________________________ */
 
-.section-four{
+#section-four{
     display: flex;
     width: 90%;
     background-color: #f5f5f5;
@@ -459,7 +471,7 @@ footer{
     width: 20%;
 }
 
-.scroll-to-top{
+#scroll-to-top{
     width: 60px;
     height: 30px;
     position: fixed;
@@ -533,7 +545,7 @@ footer{
         font-size: 12px;
     }
 
-    .section-three, .section-four{
+    #section-three, #section-four{
         flex-direction: column-reverse;
         height: 630px;
         border-radius: 0 0 80px 0;
@@ -650,11 +662,11 @@ footer{
         width: 90%;
     }
 
-    .section-three{
+    #section-three{
         height: 800px;
     }
 
-    .section-four{
+    #section-four{
         height: 500px;
     }
 
