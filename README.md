@@ -3,7 +3,9 @@
 
 ## Snaaapp!
 
-![Uploading snapp-landing.png…]()
+![snapp](https://user-images.githubusercontent.com/72157067/146080392-0970ace2-1ec2-45c5-b2e7-95c0280a59e5.png)
+
+
 
 
 ## Assignment 7 and 8
