@@ -1,15 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <button>+</button>
+        <input id="screen" type ="text" name="answer" value=''>
+        <div class="row">
+            <button id="ac">AC</button>
+            <button id="plusـminus">+/-</button>
+            <button id="mod">%</button>
+            <button id="divide">÷</button>
+        </div>
+        <div class="row">
+            <button id="seven">7</button>
+            <button id="eight">8</button>
+            <button id="nine">9</button>
+            <button id="mul">×</button>
+        </div>
+        <div class="row">
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six">6</button>
+            <button id="minus">-</button>
+        </div>
+        <div class="row">
+            <button id="one">1</button>
+            <button id="two">2</button>
+            <button id="three">3</button>
+            <button id="plus">+</button>
+        </div>
+        <div class="row">
+            <button id="zero">0</button>
+            <button id="dote">.</button>
+            <button id="equal">=</button>
+        </div>
     </div>
-</body>
+  </body>
+  <script>
+        var temp = 0
+        var op = ''
+        var res = document.getElementById("screen");
+
+        zero.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '0'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 0
+            }
+        }
+
+        one.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '1'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 1
+            }
+        }
+
+        two.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '2'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 2
+            }
+        }
+
+        three.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '3'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 3
+            }
+        }
+
+        four.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '4'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 4
+            }
+        }
+
+        five.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '5'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 5
+            }
+        }
+
+        six.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '6'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 6
+            }
+        }
+
+        seven.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '7'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 7
+            }
+        }
+
+        eight.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '8'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 8
+            }
+        }
+
+        nine.onclick = function() {
+            if (res.value < 0){
+                res.value = Math.abs(res.value) + '9'
+                res.value = -(res.value)
+            }
+            else{
+                res.value += 9
+            }
+        }
+
+        ac.onclick = function() {
+            res.value = ''
+        }
+
+        plusـminus.onclick = function() {
+            res.value = -(res.value)
+        }
+
+        plus.onclick = function() {
+            op = '+'
+            temp = parseInt(res.value)
+            res.value = ''
+        }
+        
+        minus.onclick = function() {
+            op = '-'
+            temp = parseInt(res.value)
+            res.value = ''
+        }
+        
+        mul.onclick = function() {
+            op = '*'
+            temp = parseInt(res.value)
+            res.value = ''
+        }
+        
+        divide.onclick = function() {
+            op = '/'
+            temp = parseInt(res.value)
+            res.value = ''
+        }
+        
+        mod.onclick = function() {
+            res.value /= 100
+        }
+
+        equal.onclick = function() {
+            console.log(temp, res.value)
+            if(op == '+'){
+                res.value = temp + parseInt(res.value)
+                temp = ''
+            }
+            if(op == '-'){
+                res.value = temp - parseInt(res.value)
+                temp = ''
+            }
+            if(op == '*'){
+                res.value = temp * parseInt(res.value)
+                temp = ''
+            }
+            if(op == '/'){
+                res.value = temp / parseInt(res.value)
+                temp = ''
+            }
+        }
+
+
+
+  </script>
 </html>

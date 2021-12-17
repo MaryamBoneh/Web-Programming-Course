@@ -11,8 +11,20 @@ body{
 
 #container{
     display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 260px;
+    padding: 20px;
+    border-radius: 0.5rem;
     margin: auto;
-    width: 50%;
+    margin-top: 10%;
+    box-shadow: -0.25rem -0.25rem 0.5rem hsl(0deg 0% 100% / 7%), 
+                0.25rem 0.25rem 0.5rem rgb(0 0 0 / 12%), 
+                -0.75rem -0.75rem 1.75rem hsl(0deg 0% 100% / 7%), 
+                0.75rem 0.75rem 1.75rem rgb(0 0 0 / 12%), 
+                inset 8rem 8rem 8rem rgb(0 0 0 / 5%), 
+                inset -8rem -8rem 8rem hsl(0deg 0% 100% / 5%);
+                
 }
 
 button{
@@ -27,11 +39,32 @@ button{
     background-color: #191a1d;
     border: 0;
     border-radius: 5px;
+    font-size: 1rem;
     padding: 8px;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 8px
 }
 
-.screen{
+#screen{
     border: 2px solid #e2e8f0;
     border-radius: 0.5rem;
+    height: 48px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+    width: 240px;
+    background-color: #0000;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+}
+
+#zero{
+    width: 115px;
 }
