@@ -48,7 +48,7 @@ button{
 }
 
 #screen{
-    border: 2px solid #e2e8f0;
+    border: 0;
     border-radius: 0.5rem;
     height: 48px;
     margin-bottom: 15px;
@@ -59,6 +59,12 @@ button{
     font-size: 1.5rem;
     padding: 5px;
     box-sizing: border-box;
+    box-shadow:  -0.25rem -0.25rem 0.5rem hsl(0deg 0% 100% / 7%), 
+    0.25rem 0.25rem 0.5rem rgb(0 0 0 / 12%), 
+    -0.75rem -0.75rem 1.75rem hsl(0deg 0% 100% / 7%), 
+    0.75rem 0.75rem 1.75rem rgb(0 0 0 / 12%), 
+    inset 8rem 8rem 8rem rgb(0 0 0 / 5%), 
+    inset -8rem -8rem 8rem hsl(0deg 0% 100% / 5%);
 }
 
 .row{
@@ -67,4 +73,9 @@ button{
 
 #zero{
     width: 115px;
+}
+
+button:active:hover {
+    box-shadow: inset 5px 5px 15px rgba(255, 255, 255, 0.18),
+    inset -5px -5px 15px  rgba(255, 255, 255, 0.18);
 }

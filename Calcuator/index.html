@@ -157,53 +157,55 @@
 
         plus.onclick = function() {
             op = '+'
-            temp = parseInt(res.value)
+            temp = parseFloat(res.value)
             res.value = ''
         }
         
         minus.onclick = function() {
             op = '-'
-            temp = parseInt(res.value)
+            temp = parseFloat(res.value)
             res.value = ''
         }
         
         mul.onclick = function() {
             op = '*'
-            temp = parseInt(res.value)
+            temp = parseFloat(res.value)
             res.value = ''
         }
         
         divide.onclick = function() {
             op = '/'
-            temp = parseInt(res.value)
+            temp = parseFloat(res.value)
             res.value = ''
         }
         
         mod.onclick = function() {
             res.value /= 100
         }
+        
+        dote.onclick = function() {
+            res.value += '.'
+        }
 
         equal.onclick = function() {
             console.log(temp, res.value)
             if(op == '+'){
-                res.value = temp + parseInt(res.value)
+                res.value = temp + parseFloat(res.value)
                 temp = ''
             }
             if(op == '-'){
-                res.value = temp - parseInt(res.value)
+                res.value = temp - parseFloat(res.value)
                 temp = ''
             }
             if(op == '*'){
-                res.value = temp * parseInt(res.value)
+                res.value = temp * parseFloat(res.value)
                 temp = ''
             }
             if(op == '/'){
-                res.value = temp / parseInt(res.value)
+                res.value = temp / parseFloat(res.value)
                 temp = ''
             }
         }
-
-
 
   </script>
 </html>
