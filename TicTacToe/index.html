@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tic Tac Toe Game">
+    <meta name="keywords" content="Tic Tac Toe, game">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div class="main">
+            <div class="right">
+                <h5>Score Board</h5>
+                <br>
+                <div><span>O: </span><span id="o">0</span></div>
+                <br>
+                <div><span>X: </span><span id="x">0</span></div>
+                <br>
+                <div><span>Draw: </span><span id="draw">0</span></div>
+            </div>
+            <div class="left">
+                <div class="game-box">
+                    <div class="tile" onclick="select('one')" id="one"></div>
+                    <div class="tile" onclick="select('two')" id="two"></div>
+                    <div class="tile" onclick="select('three')" id="three"></div>
+                    <div class="tile" onclick="select('four')" id="four"></div>
+                    <div class="tile" onclick="select('five')" id="five"></div>
+                    <div class="tile" onclick="select('six')" id="six"></div>
+                    <div class="tile" onclick="select('seven')" id="seven"></div>
+                    <div class="tile" onclick="select('eight')" id="eight"></div>
+                    <div class="tile" onclick="select('nine')" id="nine"></div>
+                </div>
+                <div class="one-or-two">
+                    <label for="two">Player VS Player</label>
+                    <input type="radio" id="vs-player" name="one-or-two" value="two" onclick="one_or_two_select()" checked>
+                    <label for="one">Player VS Computer</label>
+                    <input type="radio" id="vs-computer" name="one-or-two" value="one" onclick="one_or_two_select()">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var flag = 'O';
+    var O_score = 0;
+    var X_score = 0;
+    var draw_score = 0;
+    var c = 0;
+    var X = document.getElementById('x')
+    var O = document.getElementById('o')
+    var draw = document.getElementById('draw')
+    var one_or_two = document.querySelector('input[name="one-or-two"]:checked').value;
+    var one = document.getElementById('one')
+    var two = document.getElementById('two')
+    var three = document.getElementById('three')
+    var four = document.getElementById('four')
+    var five = document.getElementById('five')
+    var six = document.getElementById('six')
+    var seven = document.getElementById('seven')
+    var eight = document.getElementById('eight')
+    var nine = document.getElementById('nine')
+    var tiles = document.getElementsByClassName('tile')
+
+    function one_or_two_select () {
+        one_or_two = document.querySelector('input[name="one-or-two"]:checked').value;
+    }
+
+    function select(s) {
+        if(one_or_two == 'two'){
+            if (flag == 'O'){
+                document.getElementById(s).classList.add('X');
+                document.getElementById(s).innerHTML = 'X';
+                flag = 'X'
+            }else{
+                document.getElementById(s).classList.add('O');
+                document.getElementById(s).innerHTML = 'O';
+                flag = 'O'
+            }
+        }else{
+            document.getElementById(s).classList.add('X');
+            document.getElementById(s).innerHTML = 'X';
+            flag = 'X'
+            computer_select()
+        }
+        chek()
+    }
+    
+    function chek() {
+        c += 1;
+        if (one.innerHTML == two.innerHTML && two.innerHTML == three.innerHTML && one.innerHTML != ''){
+            window.setTimeout(win, 500)
+        }else if (one.innerHTML == five.innerHTML && five.innerHTML == nine.innerHTML && one.innerHTML != ''){
+            window.setTimeout(win, 500)
+        }else if (three.innerHTML == five.innerHTML && five.innerHTML == seven.innerHTML && three.innerHTML != ''){
+            window.setTimeout(win, 500)
+        }else if (four.innerHTML == five.innerHTML && five.innerHTML == six.innerHTML && four.innerHTML != ''){
+            window.setTimeout(win, 500)
+        }else if (seven.innerHTML == eight.innerHTML && eight.innerHTML == nine.innerHTML && seven.innerHTML != ''){
+            window.setTimeout(win, 500)            
+        }else if (one.innerHTML == four.innerHTML && four.innerHTML == seven.innerHTML && one.innerHTML != ''){
+            window.setTimeout(win, 500)            
+        }else if (two.innerHTML == five.innerHTML && five.innerHTML == eight.innerHTML && two.innerHTML != ''){
+            window.setTimeout(win, 500)            
+        }else if (three.innerHTML == six.innerHTML && six.innerHTML == nine.innerHTML && three.innerHTML != ''){
+            window.setTimeout(win, 500)            
+        }
+        else if(c == 9){
+            for(var i = 0; i < tiles.length; i++){
+            tiles[i].innerHTML = ''
+            tiles[i].classList.remove('X')
+            tiles[i].classList.remove('O')
+            }
+            draw_score += 1
+            draw.innerHTML = draw_score
+            c = 0;
+            window.alert('Draw 💐')
+        }
+    }
+
+    function computer_select(){
+        for (i = 0; 1 < 9; i++){
+            for (j = 0; 1 < 9; j++){
+                console.log();
+            }
+        }
+    }
+
+    function win(){
+        c = 0;
+        if(flag == 'O'){
+            O_score += 1;
+            O.innerHTML = O_score
+        }else{
+            X_score += 1;
+            X.innerHTML = X_score
+        }
+        for(var i = 0; i < tiles.length; i++){
+            tiles[i].innerHTML = ''
+            tiles[i].classList.remove('X')
+            tiles[i].classList.remove('O')
+        }
+        window.alert('Player ' + flag + ' Wins 🏆💐')
+    }
+    
+
+</script>
+
+</html>
