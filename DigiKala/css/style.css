@@ -1,0 +1,51 @@
+@font-face {
+    font-family: sans-font;
+    src: url('DigiKala/assets/font/IRANSans(FaNum)_Medium.ttf');
+}
+
+input[type="text"], button{
+    font-family: sans-font !important;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    font-family: sans-font !important;
+    background-color: #f5f5f5;
+}
+
+.search_inp{
+    width: 100% !important;
+    background-color: #dddddd !important;
+    border: 0px !important;
+}
+
+.top-menu{
+    box-shadow: 0px -3px 15px -5px #000000;
+}
+
+.form-control {
+    padding: 0.8rem 0.75rem !important;
+    font-size: 12px !important;
+}
+
+.section-two{
+    background-color: #ef394e;
+}
+
+.offer-percentage{
+    border-radius: 15px;
+    background-color: #fb3449;
+    color: #fff;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-price{
+    color: #a1a1a1;
+    text-decoration: line-through;
+    padding-left: 1rem;
+}
