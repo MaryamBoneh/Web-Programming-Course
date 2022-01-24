@@ -11,7 +11,7 @@ input[type="text"], button{
 body{
     margin: 0;
     font-family: sans-font !important;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5 !important;
 }
 
 .search_inp{
@@ -53,6 +53,23 @@ body{
     text-decoration: line-through;
     padding-left: 1rem;
 }
+
 .progress{
     height: .3rem !important;
+}
+
+.cyan-color{
+    color: #00bfd6;
+}
+
+@media screen and (max-width:450px) {
+
+    .slider-1 .row{
+        margin-left: 0 !important;
+    }
+    
+    .slider-1 .card{
+        border-bottom: 1px solid #ddd !important;
+    }
+    
 }
