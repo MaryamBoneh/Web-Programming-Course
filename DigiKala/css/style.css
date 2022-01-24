@@ -33,6 +33,10 @@ body{
     background-color: #ef394e;
 }
 
+.section-four{
+    background-color: #6bb927;
+}
+
 .offer-percentage{
     border-radius: 15px;
     background-color: #fb3449;
@@ -48,4 +52,7 @@ body{
     color: #a1a1a1;
     text-decoration: line-through;
     padding-left: 1rem;
+}
+.progress{
+    height: .3rem !important;
 }
