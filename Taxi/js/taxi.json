@@ -1,0 +1,23 @@
+[
+    {
+        "name": "asqar",
+        "car": "samand",
+        "car-number": "ir1244gh456",
+        "lat" : 48.328550,
+        "lng" : 56.623909
+    },
+    {
+        "name": "shahab",
+        "car": "pride",
+        "car-number": "ir7444gh989",
+        "lat" : 48.328520,
+        "lng" : 56.623919
+    },
+    {
+        "name": "ali",
+        "car": "pride",
+        "car-number": "ir3644gh678",
+        "lat" : 48.328534,
+        "lng" : 56.623929
+    }
+]
