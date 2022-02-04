@@ -10,7 +10,7 @@ function Notify() {
 
 
 function showNotification() {
-    if ("notification" in window){
+    if ("Notification" in window){
         if (Notification.permission === "granted"){
             Notify();
         } else if (Notification.permission !== "denied"){
