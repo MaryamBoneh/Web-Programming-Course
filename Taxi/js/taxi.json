@@ -3,21 +3,21 @@
         "name": "asqar",
         "car": "samand",
         "car-number": "ir1244gh456",
-        "lat" : 48.328550,
-        "lng" : 56.623909
+        "lat" : 36.2605,
+        "lng" : 59.6155
     },
     {
         "name": "shahab",
         "car": "pride",
         "car-number": "ir7444gh989",
-        "lat" : 48.328520,
-        "lng" : 56.623919
+        "lat" : 36.2602,
+        "lng" : 59.6161
     },
     {
         "name": "ali",
         "car": "pride",
         "car-number": "ir3644gh678",
-        "lat" : 48.328534,
-        "lng" : 56.623929
+        "lat" : 36.2604,
+        "lng" : 59.6169
     }
 ]
