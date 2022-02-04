@@ -1,6 +1,6 @@
 
 function Notify() {
-    var notif = Notification("سفر جدید", {
+    var notif = new Notification("سفر جدید", {
         icon:"img/taxi.svg",
         body: "سلام خانم/آقای راننده. کجاااایی زود باش برو مسافر منتظره. البته عجله نکن!"
     })
