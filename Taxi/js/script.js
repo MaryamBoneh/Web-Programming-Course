@@ -22,8 +22,7 @@ function displayCars(){
     var car_img_1 = new google.maps.Marker({   
         position: car1,
         draggable: false,
-        icon:'img/taxi.svg',
-        animation:google.maps.Animation.BOUNCE
+        icon:'img/taxi.png',
     });
     car_img_1.setMap(map);
     
@@ -32,8 +31,7 @@ function displayCars(){
     var car_img_2 = new google.maps.Marker({   
         position: car2,
         draggable: false,
-        icon:'img/taxi.svg',
-        animation:google.maps.Animation.BOUNCE
+        icon:'img/taxi.png',
     });
     car_img_2.setMap(map);
     
@@ -42,8 +40,7 @@ function displayCars(){
     var car_img_3 = new google.maps.Marker({   
         position: car3,
         draggable: false,
-        icon:'img/taxi.svg',
-        animation:google.maps.Animation.BOUNCE
+        icon:'img/taxi.png',
     });
     car_img_3.setMap(map);
 }
@@ -61,7 +58,7 @@ function getDistance(start, end){
 function myMap() {
     var mapProp= {
         center: new google.maps.LatLng(lat, long),
-        zoom: 15,
+        zoom: 12,
     };
     map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
