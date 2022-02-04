@@ -4,20 +4,20 @@
         "car": "samand",
         "car-number": "ir1244gh456",
         "lat" : 36.2605,
-        "lng" : 59.6155
+        "lng" : 59.6255
     },
     {
         "name": "shahab",
         "car": "pride",
         "car-number": "ir7444gh989",
         "lat" : 36.2602,
-        "lng" : 59.6161
+        "lng" : 59.6661
     },
     {
         "name": "ali",
         "car": "pride",
         "car-number": "ir3644gh678",
-        "lat" : 36.2604,
+        "lat" : 36.2204,
         "lng" : 59.6169
     }
 ]
