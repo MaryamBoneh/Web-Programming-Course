@@ -1,0 +1,79 @@
+@font-face {
+    font-family: sans-font;
+    src: url('../assets/font/IRANSans(FaNum)_Medium.ttf');
+}
+
+input[type="text"], button{
+    font-family: sans-font !important;
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    background-image: linear-gradient(to bottom left, var(--gradient-color-stops));
+    --gradient-from-color: #34393f;
+    --gradient-to-color: #191a1d;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(52, 57, 63, 0));
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.search_inp{
+    width: 100% !important;
+    background-color: #dddddd !important;
+    border: 0px !important;
+}
+
+.top-menu{
+    box-shadow: 0px -3px 15px -5px #000000;
+}
+
+.form-control {
+    padding: 0.8rem 0.75rem !important;
+    font-size: 12px !important;
+}
+
+.section-two{
+    background-color: #ef394e;
+}
+
+.section-four{
+    background-color: #6bb927;
+}
+
+.offer-percentage{
+    border-radius: 15px;
+    background-color: #fb3449;
+    color: #fff;
+    width: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-price{
+    color: #a1a1a1;
+    text-decoration: line-through;
+    padding-left: 1rem;
+}
+
+.progress{
+    height: .3rem !important;
+}
+
+.cyan-color{
+    color: #00bfd6;
+}
+
+@media screen and (max-width:450px) {
+
+    .slider-1 .row{
+        margin-left: 0 !important;
+    }
+    
+    .slider-1 .card{
+        border-bottom: 1px solid #ddd !important;
+    }
+    
+}
