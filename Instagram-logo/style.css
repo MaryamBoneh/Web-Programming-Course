@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.instagram {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+    font-size: 220px;
+    line-height: 250px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+.outer-circle{
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 40px;
+    width: 170px;
+    height: 170px;
+    left: 25px;
+    top: 25px;
+}
+
+.inner-circle{
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    left: 30px;
+    top: 30px;
+}
+
+.dote {
+    position: absolute;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    left: 135px;
+    top: 15px;
+}
