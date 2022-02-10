@@ -12,3 +12,30 @@ body{
     background-attachment: fixed;
     height: 100vh;
 }
+
+.card-body {
+    background-color: #000;
+    margin-bottom: 2rem;
+    min-height: 175px;
+    overflow-wrap: break-word;
+}
+
+.card-body h4 {
+    color: #f56161;
+}
+
+.card {
+    background-color: #000;
+    min-height: 510px;
+}
+
+img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1); 
+}
+  
+img:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+}

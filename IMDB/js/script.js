@@ -22,13 +22,13 @@ function show_movie(){
         var director = document.createElement("span");
         var img = document.createElement("img");
         var rate = document.createElement("span");
-        var card_title = document.createElement("h3");
+        var card_title = document.createElement("h4");
         var genre = document.createElement("span");
         var year = document.createElement("span");
 
-        main_div.className = "col-3 col-md col-sm m-3";
+        main_div.className = "col-lg-3 col-md-4 col-sm-6";
         img_div.className = "card";
-        description_div.className = "card-body";
+        description_div.className = "card-body text-white border-box d-flex flex-column";
         card_title.className = "card-title";
         year.className = "card-text";
         director.className = "card-text";
@@ -39,8 +39,8 @@ function show_movie(){
         img.src = media_info[i].info.image_url;
         card_title.innerHTML = media_info[i].title;
         director.innerHTML = "Dirctor: " + media_info[i].info.directors;
-        rate.innerHTML = "Rate:"+ media_info[i].info.rating;
-        genre.innerHTML = "Genre:"+ media_info[i].info.genres;
+        rate.innerHTML = "Rate: "+ media_info[i].info.rating;
+        genre.innerHTML = "Genre: "+ media_info[i].info.genres;
         year.innerHTML = "Year: " + media_info[i].year;
 
         main.appendChild(main_div);          
