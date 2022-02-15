@@ -1,0 +1,27 @@
+body{ 
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgb(189,42,42);
+    background: radial-gradient(circle, rgba(189,42,42,1) 0%, rgba(89,0,14,1) 100%);    
+}
+
+#heart{
+    animation: beat .25s infinite alternate;
+}
+
+.material-icons{
+    font-size: 18rem !important;
+    color:  #fff;
+}
+
+@keyframes beat{
+	to{ transform: scale(1.4); }
+}
