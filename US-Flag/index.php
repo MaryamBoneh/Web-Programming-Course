@@ -17,9 +17,9 @@
     <?php endfor; ?>
     <div style="width: 100%; height: 7vh; background-color: #bd2a2a;"></div>
 
-    <div style="position: absolute; top:0px; left: 0px; width: 45%; height: 50vh; background-color: #fff;">
+    <div style="position: absolute; top:0px; left: 0px; width: 45%; height: 49vh; background-color: #0d076e;">
         <?php for($i = 0; $i < 54; $i++):?>
-            <span style="position: absolute; top:<?php print(rand(1, 90));?>%; left: <?php print(rand(1, 90));?>%;"
+            <span style="position: absolute; top:<?php print(rand(1, 85));?>%; left: <?php print(rand(1, 90));?>%;"
             id="heart" class="material-icons">star</span>
         <?php endfor; ?>
     </div>
