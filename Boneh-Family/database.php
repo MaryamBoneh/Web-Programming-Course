@@ -1,5 +1,5 @@
 <?php
-    $connection = mysqli_connect("localhost", "root", "root", "Boneh-Family");
+    $connection = mysqli_connect("localhost", "root", "root", "PhoneBook");
 
     if (mysqli_connect_errno() == 0) {
         
