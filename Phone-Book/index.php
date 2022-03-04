@@ -26,7 +26,22 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <button type="button" class="btn btn-outline-danger">Delete all</button>
+        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete all</button>
+        <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel">Are you sure you want to delete?</h5>
+                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post" action="delete.php">
+                            <button type="submit" class="btn btn-danger">Yes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
     <div class="container">
         <div class="row mt-5">
@@ -66,7 +81,7 @@
                                 <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <form method="post" action="new_message.php">
+                                <form method="post" action="new_contact.php">
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">name</label>
                                         <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
