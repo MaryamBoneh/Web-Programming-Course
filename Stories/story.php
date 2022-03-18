@@ -1,14 +1,10 @@
 <?php
 
     include "database.php";
-    // $PARENT_ID = 1;
     $PARENT_ID = $_POST["p_id"];
     $sections_table = $db-> query("SELECT * FROM StorySections WHERE PARENT = $PARENT_ID");
-    // $section = $sections_table-> fetch_assoc();
+    $total = $sections_table->num_rows;
 
-    // $pasokh_table = $db-> query("SELECT * FROM answers WHERE Q_ID = 1");
-    
-    // header("Location: index.php");
 ?>
 
 <html lang="fa" dir="rtl">
@@ -30,26 +26,42 @@
     <body>
         <div class="container d-flex justify-content-center align-items-center mt-5">
             <div class="row mt-5">
-            <?php foreach($sections_table as $section): ?>
-                <div class="card soal" style="width: 80%; margin: 1% 0">
-                    <div class="card-body">
-                        <p class="card-text">
-                            <div class="">
-                                <span class="">
-                                    <?php echo $section["TEXT"];?>
-                                </span>
-                            </div>
-                        </p>
-                        <form action="story.php" method="post">
-                            <input type="text" name="p_id" class="d-none" value="<?php  echo $section["ID"]; ?>">
-                            <button type="submit" class="btn btn-success">بعدی</button>
-                        </form>
+                <?php foreach($sections_table as $section): ?>
+                    <div class="card soal" style="width: 80%; margin: 1% 0">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <div class="">
+                                    <span class="">
+                                        <?php echo $section["TEXT"];?>
+                                    </span>
+                                </div>
+                            </p>
+                            <form action="story.php" method="post">
+                                <input type="text" name="p_id" class="d-none" value="<?php  echo $section["ID"]; ?>">
+                                <button type="submit" class="btn btn-success">بعدی</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+
+                <?php if($total == 0){ ?>
+                    <div class="card soal" style="width: 80%; margin: 1% 0">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <div class="">
+                                    قصه به پایان رسید. امیدوارم خوشت اومده باشه🌹
+                                </div>
+                            </p>
+                            <form action="index.php" method="post">
+                                <button type="submit" class="btn btn-success">بازگشت به صفحه اصلی</button>
+                            </form>
+                        </div>
+                    </div>
+                <?php } ?>
+
             </div>
         </div>
-        
+
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="js/bootstrap.js"></script>
     </body>
