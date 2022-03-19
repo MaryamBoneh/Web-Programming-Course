@@ -26,7 +26,7 @@
     <body>
         <div class="container d-flex justify-content-center align-items-center mt-5">
             <div class="row mt-5">
-                <?php foreach($sections_table as $section): ?>
+                <?php foreach($sections_table as $section){ ?>
                     <div class="card soal" style="width: 80%; margin: 1% 0">
                         <div class="card-body">
                             <p class="card-text">
@@ -42,7 +42,7 @@
                             </form>
                         </div>
                     </div>
-                <?php endforeach; ?>
+                <?php } ?>
 
                 <?php if($total == 0){ ?>
                     <div class="card soal" style="width: 80%; margin: 1% 0">

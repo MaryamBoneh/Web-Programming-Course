@@ -32,7 +32,7 @@
         <h3 class="py-3 my-5 text-center text-light">به سایت قصه‌گوی مریم خوش اومدی🌹📚</h3>
         <div class="row mt-5 d-flex justify-content-center">
             <div class="col-9 d-flex justify-content-around">
-                <?php foreach($stories as $story): ?>
+                <?php foreach($stories as $story){ ?>
                     <div class="card p-3 rounded" style="width: 20%;">
                         <div class="card-body">
                             <h6 class="card-subtitle mb-2 text-center">
@@ -46,7 +46,7 @@
                             </form>
                         </div>
                     </div>
-                <?php endforeach; ?>
+                <?php } ?>
             </div>
         </div>
     </div>
