@@ -34,7 +34,7 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Musics</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Artists</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#Albums">Albums</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#albums">Albums</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,7 +92,7 @@
         </section>
 
         <section class="page-section bg-light" id="portfolio">
-            <div class="container">
+            <div class="container" id="albums">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Albums</h2>
                     <h3 class="section-subheading text-muted">Have the best and newest albums in all styles of music</h3>
