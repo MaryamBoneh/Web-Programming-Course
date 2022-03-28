@@ -1,6 +1,5 @@
 <?php
-    $db = new mysqli("localhost", "id18615416_maryamboneh", "uY75uF1/1XKn|+>A", "id18615416_stories");
-
+    $db = new mysqli("localhost", "root", "root", "Maryam-Music");
     if ($db->connect_error) {
         echo $db->connect_error;
         echo "Connection error";
