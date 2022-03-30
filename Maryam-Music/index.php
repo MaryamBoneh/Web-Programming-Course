@@ -103,7 +103,7 @@
                                         <form action="musics.php" method="post">
                                             <input type="text" name="album_id" class="d-none" value="<?php echo $album["ID"]; ?>">
                                             <button type="submit" class="portfolio-hover-content" style="background: none; border-style: hidden;">
-                                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                                <div class="portfolio-hover-content"><i class="fas fa-eye fa-3x"></i></div>
                                             </button>
                                         </form>
                                     </div>

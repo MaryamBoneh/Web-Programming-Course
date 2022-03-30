@@ -11453,6 +11453,8 @@ header.masthead .masthead-heading {
   max-width: 26rem;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
+  transition: max-width .25s ease-in-out 0s;
 }
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
