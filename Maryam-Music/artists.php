@@ -1,7 +1,6 @@
 <?php
     include "database.php";
-    $album_id = $_POST["album_id"];
-    $musics = $db-> query( "SELECT * FROM musics WHERE ALBUM = $album_id");
+    $artists = $db-> query( "SELECT * FROM artists");
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="music" />
         <meta name="author" content="0" />
-        <title>Musics</title>
+        <title>Artists</title>
         <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.png" /> -->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -30,25 +29,28 @@
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Musics</h2>
-                    <h3 class="section-subheading text-muted">Have the best and newest songs</h3>
+                    <h2 class="section-heading text-uppercase">Artists</h2>
+                    <h3 class="section-subheading text-muted">All singers in all styles of music</h3>
                 </div>
                 <div class="row">
-                    <?php if ($musics->num_rows != 0){ 
-                        foreach($musics as $music){ ?>
-                            <div class="col-lg-4 col-sm-6 mb-4">
-                                <div class="portfolio-item">
-                                    <a class="portfolio-link">
-                                        <img class="img-fluid" src="assets/img/musics/<?php echo $music["IMAGE"]; ?>" alt="..." />
-                                    </a>
-                                    <div class="portfolio-caption">
-                                        <div class="portfolio-caption-heading"><?php echo $music["NAME"]; ?></div>
-                                        <div class="portfolio-caption-subheading text-muted"><?php echo $music["ARTIST"]; ?></div>
-                                    </div>
+                    <?php foreach($artists as $artist){ ?>
+                        <div class="col-lg-4 col-sm-6 mb-5 p-5">
+                            <div class="portfolio-item">
+                                <a class="portfolio-link">
+                                    <img class="img-fluid" src="assets/img/artists/<?php echo $artist["IMAGE"]; ?>" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading pb-2"><?php echo $artist["NAME"];?></div>
+                                    <form action="albums.php" method="post">
+                                        <input type="text" name="artist_id" class="d-none" value="<?php echo $artist["ID"]; ?>">
+                                        <button type="submit" style="background: none; border-style: hidden; height: 30px;">
+                                            <h3 class="section-subheading text-muted" style="color: #ffc800 !important; cursor: pointer;">Show albums</h3>
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
-                        <?php } 
-                    }?>
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </section>

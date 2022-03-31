@@ -76,14 +76,26 @@
                     <h3 class="section-subheading text-muted">All singers in all styles of music</h3>
                 </div>
                 <div class="row">
-                <?php foreach($artists as $artist){ ?>
+                    <?php foreach($artists as $artist){ ?>
                         <div class="col-lg-4">
                             <div class="team-member">
                                 <img class="mx-auto rounded-circle" src="assets/img/artists/<?php echo $artist["IMAGE"]; ?>" alt="..." />
-                                <h4><?php echo $artist["NAME"]; ?></h4>
+                                <form action="albums.php" method="post">
+                                        <input type="text" name="artist_id" class="d-none" value="<?php echo $artist["ID"]; ?>">
+                                        <button type="submit" style="background: none; border-style: hidden; height: 30px;">
+                                            <h4><?php echo $artist["NAME"]; ?></h4>
+                                        </button>
+                                </form>
                             </div>
                         </div>
                     <?php } ?>
+                </div>
+                <div class="text-center">
+                    <form action="artists.php" method="post">
+                        <button type="submit" style="background: none; border-style: hidden;">
+                            <h3 class="section-subheading text-muted" style="color: #ffc800 !important; cursor: pointer;">Show all artists</h3>
+                        </button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -111,7 +123,6 @@
                                 </a>
                                 <div class="portfolio-caption">
                                     <div class="portfolio-caption-heading"><?php echo $album["NAME"]; ?></div>
-                                    <!-- <div class="portfolio-caption-subheading text-muted"> </div> -->
                                 </div>
                             </div>
                         </div>
