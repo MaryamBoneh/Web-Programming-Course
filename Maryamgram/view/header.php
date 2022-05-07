@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/all.css">
         <link rel="stylesheet" href="css/bootstrap.css" />
-        <title>MaryamGram</title>
+        <title>MaryGram</title>
 
     </head>
     <body class="bg-light">
