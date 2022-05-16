@@ -1,10 +1,9 @@
 <?php
-    include "header.php";
     include "../model/database.php";
-    // include "navbar.php"; 
+    include "navbar.php"; 
     $posts = $db->query("SELECT * FROM posts INNER JOIN users ON posts.USER_ID = users.ID");
 ?>
-<div class="container">
+<div class="container mt-6rem">
     <div class="row justify-content-center mt-5">
         <div class="col-4">
             <div class="card rounded">

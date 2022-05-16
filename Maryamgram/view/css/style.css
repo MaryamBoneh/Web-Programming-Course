@@ -4,6 +4,14 @@ body {
     height: 100vh;
 }
 
+.general-header{
+    border-bottom: 1px solid #eee;
+}
+
+.mt-6rem{
+    margin-top: 6rem;
+}
+
 .profile_body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;

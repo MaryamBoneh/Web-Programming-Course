@@ -1,4 +1,7 @@
-<?php include "header.php"; ?>
+<?php 
+    include "header.php"; 
+    include "navbar.php"; 
+?>
     <div class="profile_body mt-5">
         <div class="container d-flex justify-content-start align-items-center">
             <div class="profile_card card">
