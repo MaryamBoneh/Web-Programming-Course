@@ -31,7 +31,7 @@
             <?php foreach($posts as $post):?>
                 <div class="card rounded mb-5">
                     <div class="card-header d-flex justify-content-start align-items-center">
-                        <img src="/Web-Programming-Course/Maryamgram/view/assets/img/users/me.png" class="img-fluid rounded-circle" width="80px" alt="...">
+                        <img src="/Web-Programming-Course/Maryamgram/view/assets/img/users/<?php echo $post["IMAGE"];?>" class="img-fluid rounded-circle" width="80px" alt="...">
                         <span class="text-secondary m-3">
                             <span class=""><?php echo $post["FIRST_NAME"];?></span>
                             <br>

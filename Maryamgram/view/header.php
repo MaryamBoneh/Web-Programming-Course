@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <?php
-    session_start();
-    if (!isset($_SESSION['login_status']))
-    {
-        $_SESSION["login_status"] = false;
-    }
+    // session_start();
+    // if (!isset($_SESSION['login_status']))
+    // {
+    //     $_SESSION["login_status"] = false;
+    // }
 ?>
 <html lang="en">
     <head>    
@@ -24,3 +24,5 @@
 
     </head>
     <body class="bg-light">
+
+    <!-- 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 -->
