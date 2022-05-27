@@ -15,6 +15,7 @@ body {
 .profile_body {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    margin-top: 5rem;
 }
 
 .profile_container {
@@ -22,7 +23,7 @@ body {
 }
 
 .profile_content {
-    margin-top: 5rem
+    margin-top: 4rem
 }
 
 .profile_card {
@@ -57,7 +58,7 @@ body {
 
 .profile_profile {
     position: absolute;
-    top: -50px !important;
+    top: -60px !important;
     left: 38%;
     height: 90px;
     width: 90px;
