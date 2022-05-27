@@ -2,11 +2,11 @@
     include "header.php"; 
     include "navbar.php"; 
 ?>
-    <div class="profile_body mt-5">
+    <div class="profile_body">
         <div class="container d-flex justify-content-start align-items-center">
             <div class="profile_card card">
                 <div class="profile_upper">
-                    <img src="https://i.imgur.com/Qtrsrk5.jpg" class="img-fluid">
+                    <img src="assets/img/back-profile.jpg" class="img-fluid">
                 </div>
 
                 <div class="profile_user text-center">
