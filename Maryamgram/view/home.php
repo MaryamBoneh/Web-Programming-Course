@@ -1,6 +1,8 @@
 <?php
     include "../model/database.php";
+    include "../controller/functions.php";
     include "navbar.php"; 
+
     $posts = $db->query("SELECT *, users.ID AS karbar_id, posts.ID AS post_id FROM posts INNER JOIN users ON posts.USER_ID = users.ID ORDER BY TIME DESC");
     $posts_array = array();
     foreach ($posts as $post)
@@ -36,7 +38,7 @@
         </div>
 
         <div class="col-6">
-            <?php foreach($posts_array as $post):?>
+            <?php foreach ($posts_array as $post):?>
                 <div class="card rounded mb-5">
                     <div class="card-header d-flex justify-content-start align-items-center">
                         <img src="/Web-Programming-Course/Maryamgram/view/assets/img/users/<?php echo $post["IMAGE"];?>" class="img-fluid rounded-circle" width="80px" alt="...">
@@ -55,31 +57,46 @@
                     </div>
                 
                     <div class="card-footer d-flex flex-row align-items-center">
-                        <span class=""> 2 </span>
-                        <button type="button" class="btn mt-1">
-                            <span class="material-symbols-outlined">thumb_up</span>
-                        </button>
-                        <input type="text" class="form-control" id="<?php echo $post["ID"];?>" placeholder="your comment...">
-                        <button class="btn btn-success" type="button" data-bs-toggle="collapse"
-                         data-bs-target="#collapse<?php echo $post["ID"]; ?>" aria-expanded="false" aria-controls="collapse<?php echo $post["ID"]; ?>">
-                            comments
-                        </button>
-                        <br>
-                        <br>
-                        <div class="collapse" id="collapse<?php echo $post["post_id"]; ?>">
-                            <div class="list-group">
-                                <?php foreach($post["comments"] as $comment) : ?>
-                                    <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <i> <?php echo $comment["USER_NAME"];?></i>
-                                            <h6><?php echo $comment["TEXT"];?></h6>
-                                            <i> <?php echo time2str($comment["TIME"]);?></i>
-                                        </div>
-                                    </a>
-                                <?php endforeach; ?>
+                        <div class="row col-12 d-flex w-100 align-items-center justify-content-between flex-column">
+                            <span class="col-12 d-flex align-items-center justify-content-between">
+                                <span> <?php echo $post["likes"]["count"];?> </span>
+                                <button type="button" class="btn mt-1">
+                                    <span class="material-symbols-outlined">thumb_up</span>
+                                </button>
+                                
+                                <input type="text" class="form-control" placeholder="your comment...">
+                           
+                                <button type="button" class="btn" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $post["post_id"]; ?> " 
+                                style="font-size: 0.8rem; width: 40%; color: #aaa" aria-expanded="false" aria-controls="collapse<?php echo $post["post_id"]; ?>">
+                                Show comments
+                                </button>
+
+                            </span>
+
+                            <div class="col-12 d-flex align-items-center justify-content-between">
+                                
+                                <div class="collapse w-100" id="collapse<?php echo $post["post_id"]; ?>">
+                                    <div class="list-group">
+                                        <?php foreach ($post["comments"] as $comment) : ?>
+    
+                                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+    
+                                                <div class="d-flex w-100 flex-column justify-content-between">
+                                                    <span>
+                                                        <small class="text-secondary"> @<?php echo $comment["USER_NAME"]; ?></small>
+                                                        <small> <?php echo time2str($comment["TIME"]); ?></small>
+                                                    </span>
+                                                    <p><?php echo $comment["TEXT"]; ?></p>
+                                                </div>
+                                            </a>
+    
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             <?php endforeach;?>
         </div>
