@@ -70,7 +70,6 @@
                                 style="font-size: 0.8rem; width: 40%; color: #aaa" aria-expanded="false" aria-controls="collapse<?php echo $post["post_id"]; ?>">
                                 Show comments
                                 </button>
-
                             </span>
 
                             <div class="col-12 d-flex align-items-center justify-content-between">
@@ -78,9 +77,7 @@
                                 <div class="collapse w-100" id="collapse<?php echo $post["post_id"]; ?>">
                                     <div class="list-group">
                                         <?php foreach ($post["comments"] as $comment) : ?>
-    
-                                            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
-    
+                                            <div href="#" class="list-group-item list-group-item-action" aria-current="true">
                                                 <div class="d-flex w-100 flex-column justify-content-between">
                                                     <span>
                                                         <small class="text-secondary"> @<?php echo $comment["USER_NAME"]; ?></small>
@@ -88,8 +85,7 @@
                                                     </span>
                                                     <p><?php echo $comment["TEXT"]; ?></p>
                                                 </div>
-                                            </a>
-    
+                                            </div>
                                         <?php endforeach; ?>
                                     </div>
                                 </div>
