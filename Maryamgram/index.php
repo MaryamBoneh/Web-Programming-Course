@@ -2,6 +2,7 @@
     session_start();
     $request = $_SERVER["REQUEST_URI"];
     // $request = str_replace("/Web-Programming-Course/Maryamgram",, $request);
+    date_default_timezone_set('iran/tehran');
     
     switch ($request)
     {
@@ -36,6 +37,10 @@
 
         case("/Web-Programming-Course/Maryamgram/logout.php"):
             require __DIR__ . "/controller/logout.php";
+            break;
+
+        case("/Web-Programming-Course/Maryamgram/send_like.php"):
+            require __DIR__ . "/controller/send_like.php";
             break;
 
         default:

@@ -29,7 +29,6 @@
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
-
         <form action="#">
           <div class="input-group input-navbar">
             <div class="input-group-prepend">
@@ -69,7 +68,7 @@
     </nav>
   </header>
 
-  <div class="page-hero bg-image overlay-dark" style="background-image: url(assets/img/bg_image_1.jpg);">
+  <div class="page-hero bg-image overlay-dark" style="background-image: url(view/assets/img/bg_image_1.jpg);">
     <div class="hero-section">
       <div class="container text-center wow zoomIn">
         <span class="subhead">Let's make your life happier</span>
@@ -122,7 +121,7 @@
           </div>
           <div class="col-lg-6 wow fadeInRight" data-wow-delay="400ms">
             <div class="img-place custom-img-1">
-              <img src="assets/img/bg-doctor.png" alt="">
+              <img src="view/assets/img/bg-doctor.png" alt="">
             </div>
           </div>
         </div>
@@ -138,7 +137,7 @@
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="assets/img/doctors/doctor_1.jpg" alt="">
+              <img src="view/assets/img/doctors/doctor_1.jpg" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
@@ -153,7 +152,7 @@
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="assets/img/doctors/doctor_2.jpg" alt="">
+              <img src="view/assets/img/doctors/doctor_2.jpg" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
@@ -168,7 +167,7 @@
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="assets/img/doctors/doctor_3.jpg" alt="">
+              <img src="view/assets/img/doctors/doctor_3.jpg" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
@@ -183,7 +182,7 @@
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="assets/img/doctors/doctor_3.jpg" alt="">
+              <img src="view/assets/img/doctors/doctor_3.jpg" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
@@ -198,7 +197,7 @@
         <div class="item">
           <div class="card-doctor">
             <div class="header">
-              <img src="assets/img/doctors/doctor_3.jpg" alt="">
+              <img src="view/assets/img/doctors/doctor_3.jpg" alt="">
               <div class="meta">
                 <a href="#"><span class="mai-call"></span></a>
                 <a href="#"><span class="mai-logo-whatsapp"></span></a>
@@ -225,7 +224,7 @@
                 <a href="#">Covid19</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-                <img src="assets/img/blog/blog_1.jpg" alt="">
+                <img src="view/assets/img/blog/blog_1.jpg" alt="">
               </a>
             </div>
             <div class="body">
@@ -233,7 +232,7 @@
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                    <img src="assets/img/person/person_1.jpg" alt="">
+                    <img src="view/assets/img/person/person_1.jpg" alt="">
                   </div>
                   <span>Roger Adams</span>
                 </div>
@@ -249,7 +248,7 @@
                 <a href="#">Covid19</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-                <img src="assets/img/blog/blog_2.jpg" alt="">
+                <img src="view/assets/img/blog/blog_2.jpg" alt="">
               </a>
             </div>
             <div class="body">
@@ -257,7 +256,7 @@
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                    <img src="assets/img/person/person_1.jpg" alt="">
+                    <img src="view/assets/img/person/person_1.jpg" alt="">
                   </div>
                   <span>Roger Adams</span>
                 </div>
@@ -273,7 +272,7 @@
                 <a href="#">Covid19</a>
               </div>
               <a href="blog-details.html" class="post-thumb">
-                <img src="assets/img/blog/blog_3.jpg" alt="">
+                <img src="view/assets/img/blog/blog_3.jpg" alt="">
               </a>
             </div>
             <div class="body">
@@ -281,7 +280,7 @@
               <div class="site-info">
                 <div class="avatar mr-2">
                   <div class="avatar-img">
-                    <img src="assets/img/person/person_2.jpg" alt="">
+                    <img src="view/assets/img/person/person_2.jpg" alt="">
                   </div>
                   <span>Diego Simmons</span>
                 </div>
@@ -336,18 +335,18 @@
     </div>
   </div> <!-- .page-section -->
 
-  <div class="page-section banner-home bg-image" style="background-image: url(assets/img/banner-pattern.svg);">
+  <div class="page-section banner-home bg-image" style="background-image: url(view/assets/img/banner-pattern.svg);">
     <div class="container py-5 py-lg-0">
       <div class="row align-items-center">
         <div class="col-lg-4 wow zoomIn">
           <div class="img-banner d-none d-lg-block">
-            <img src="assets/img/mobile_app.png" alt="">
+            <img src="view/assets/img/mobile_app.png" alt="">
           </div>
         </div>
         <div class="col-lg-8 wow fadeInRight">
           <h1 class="font-weight-normal mb-3">Get easy access of all features using One Health Application</h1>
-          <a href="#"><img src="assets/img/google_play.svg" alt=""></a>
-          <a href="#" class="ml-2"><img src="assets/img/app_store.svg" alt=""></a>
+          <a href="#"><img src="view/assets/img/google_play.svg" alt=""></a>
+          <a href="#" class="ml-2"><img src="view/assets/img/app_store.svg" alt=""></a>
         </div>
       </div>
     </div>

@@ -20,13 +20,13 @@
         <meta name="keywords" content="physician"/>
         <meta name="auther" content="Boneh"/>
         
-        <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.css">
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <link rel="stylesheet" href="vendor/animate/animate.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/maicons.css">
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/theme.css">
-        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="view/vendor/owl-carousel/css/owl.carousel.css">
+        <link rel="icon" type="image/x-icon" href="view/assets/img/favicon.ico" />
+        <link rel="stylesheet" href="view/vendor/animate/animate.css">
+        <link rel="stylesheet" href="view/css/bootstrap.css">
+        <link rel="stylesheet" href="view/css/maicons.css">
+        <link rel="stylesheet" href="view/css/style.css"/>
+        <link rel="stylesheet" href="view/css/theme.css">
+        <link rel="stylesheet" href="view/css/all.css">
     </head>
     <body>

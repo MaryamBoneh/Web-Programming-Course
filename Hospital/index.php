@@ -2,7 +2,7 @@
     session_start();
     $request = $_SERVER["REQUEST_URI"];
     // $request = str_replace("/Web-Programming-Course/Hospital",, $request);
-    date_default_timezone_set('iran/tehran');
+    // date_default_timezone_set('iran/tehran');
     
     switch ($request)
     {
