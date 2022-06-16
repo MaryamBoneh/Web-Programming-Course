@@ -3,7 +3,7 @@ $('document').ready(function() {
   $('#doctorSlideshow').owlCarousel({
     nav: true,
     dots: false,
-    navText: ["<span class='mai-arrow-back'></span>", "<span class='mai-arrow-forward'></span>"],
+    // navText: ["<span class='material-symbols-rounded'>chevron_left</span>", "<span class='material-symbols-rounded'>chevron_right</span>"],
     responsive: {
       0: {
         items: 1
