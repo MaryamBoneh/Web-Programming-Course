@@ -1308,7 +1308,6 @@ a.text-dark:hover, a.text-dark:focus {
 .card-doctor .header {
   position: relative;
   width: 100%;
-  height: 260px;
   overflow: hidden;
 }
 
