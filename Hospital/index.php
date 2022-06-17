@@ -1,13 +1,17 @@
 <?php
     session_start();
     $request = $_SERVER["REQUEST_URI"];
-    // $request = str_replace("/Web-Programming-Course/Hospital",, $request);
-    // date_default_timezone_set('iran/tehran');
+    // $request = str_replace('/Web-Programming-Course', '', $request);
+    // $request = preg_replace('/\?.*/', '', $request);
     
-    switch ($request)
+    switch($request)
     {
-        case("/Web-Programming-Course/Hospital/"):
+        case("/Web-Programming-Course/Hospital/view/index.php"):
             require __DIR__ . "/view/index.php";
+            break;
+            
+        case("/Web-Programming-Course/Hospital/view/doctors.php"):
+            require __DIR__ . "/controller/doctors.php";
             break;
 
         case("Web-Programming-Course/Hospital/home.php"):
