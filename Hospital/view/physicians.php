@@ -11,10 +11,10 @@
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
             <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Doctors</li>
+            <li class="breadcrumb-item active" aria-current="page">physicians</li>
           </ol>
         </nav>
-        <h1 class="font-weight-normal">Our Doctors</h1>
+        <h1 class="font-weight-normal">Our physicians</h1>
       </div>
     </div>
   </div>

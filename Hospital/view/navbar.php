@@ -43,16 +43,20 @@
             <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="doctors.php">Doctors</a>
+            <a class="nav-link" href="physicians.php">physicians</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="visit.php">Visit</a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="physician_login_register.php">Physician Panel</a>
+          </li>
           <li class="nav-item">
-            <a class="btn btn-primary ml-lg-3" href="#">Login / Register</a>
+            <a class="btn btn-primary ml-lg-3" href="patient_login_register.php">Login / Register</a>
           </li>
         </ul>
       </div>
+
     </div>
   </nav>
 </header>
