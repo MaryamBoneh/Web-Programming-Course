@@ -1230,6 +1230,19 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ffffff;
   z-index: 10;
 }
+.banner-section-other {
+  background-image: url("../assets/img/doctor-visit.jpg");
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  color: #ffffff;
+  z-index: 10;
+}
 
 .hero-section .subhead {
   text-transform: uppercase;

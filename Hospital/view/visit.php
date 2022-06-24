@@ -8,7 +8,7 @@
 
 
   <div class="page-banner overlay-dark bg-image" style="background-image: url(../assets/img/bg_image_1.jpg);">
-    <div class="banner-section">
+    <div class="banner-section-other">
       <div class="container text-center wow fadeInUp">
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
@@ -23,7 +23,6 @@
 
   <div class="page-section">
     <div class="container">
-      <h1 class="text-center wow fadeInUp">Visit</h1>
 
       <form class="contact-form mt-5" method="post" action="select_time.php">
         <div class="row mb-3">
