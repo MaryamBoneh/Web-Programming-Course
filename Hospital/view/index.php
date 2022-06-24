@@ -10,7 +10,7 @@
       <div class="container text-center wow zoomIn">
         <span class="subhead">Let's make your life happier</span>
         <h1 class="display-4">Healthy Living</h1>
-        <a href="#" class="btn btn-primary">Visit</a>
+        <a href="visit.php" class="btn btn-primary">Visit</a>
       </div>
     </div>
   </div>
