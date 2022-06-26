@@ -6,7 +6,6 @@
     include "navbar.php";
 ?>
 
-
   <div class="page-banner overlay-dark bg-image" style="background-image: url(../assets/img/bg_image_1.jpg);">
     <div class="banner-section-other">
       <div class="container text-center wow fadeInUp">
@@ -46,7 +45,7 @@
           </div>
           
         </div>
-        <button type="submit" class="btn btn-primary wow zoomIn">Submit</button>
+        <button type="submit" class="btn btn-primary wow zoomIn">Select time</button>
       </form>
     </div>
   </div>

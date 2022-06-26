@@ -75,7 +75,7 @@
           <div class="item">
             <div class="card-doctor">
               <div class="header">
-                <img src="assets/img/doctors/<?php echo $physician['IMAGE']; ?>" alt="">
+                <img src="assets/img/doctors/<?php if (isset($physician["IMAGE"]) & $physician["IMAGE"] != '') { echo $physician["IMAGE"];} else { echo "user.png"; } ?>" alt="">
               </div>
               <div class="body">
                 <p class="text-xl mb-0">Dr. <?php echo $physician['NAME']; ?></p>

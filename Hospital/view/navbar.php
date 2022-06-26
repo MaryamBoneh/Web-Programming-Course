@@ -1,6 +1,10 @@
 <?php
     include "header.php";
     include "../model/database.php";
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
 ?>
 
 
@@ -48,12 +52,18 @@
           <li class="nav-item">
             <a class="nav-link" href="visit.php">Visit</a>
           </li>
+          <?php if ($_SESSION["login_status"] != null && $_SESSION["login_status"] == true): ?>
+            <li class="nav-item">
+              <a class="nav-link" href="../controller/logout.php"><span class="material-symbols-rounded">logout</span></a>
+            </li>
+          <?php else: ?>
           <li class="nav-item active">
             <a class="nav-link" href="physician_login_register.php">Physician Panel</a>
           </li>
           <li class="nav-item">
             <a class="btn btn-primary ml-lg-3" href="patient_login_register.php">Login / Register</a>
           </li>
+          <?php endif; ?>
         </ul>
       </div>
 

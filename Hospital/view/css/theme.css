@@ -1383,7 +1383,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .card-doctor .body {
-  padding: 15px 20px;
+  padding: 10px 20px;
 }
 
 @media (min-width: 768px) {
@@ -1426,7 +1426,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .card-blog .body {
-  padding: 15px 20px;
+  padding: 10px 20px;
 }
 
 .card-blog .post-category {

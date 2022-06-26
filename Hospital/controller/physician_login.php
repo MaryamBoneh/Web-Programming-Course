@@ -1,7 +1,10 @@
 <?php 
 
     include "../model/database.php";
-
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
     $np_code = $_POST["NP_CODE"];
     $password = $_POST["PASSWORD"];
     $result = $db->query("SELECT * FROM physician WHERE NP_CODE = '$np_code' AND PASSWORD = '$password'");
@@ -12,9 +15,13 @@
 
     if($physician_count == 1)
     {
-        $physician = $result->fetch_assoc();
+        echo "<script type='text/JavaScript'>
+            localStorage.setItem('physician_code', 3);
+            </script>"
+        ;
         $_SESSION["login_status"] = true;
-        $_SESSION["physician_id"] = $physician["ID"];
+        $_SESSION["physician_code"] = $np_code;
+
         header("Location:../view/physician_panel.php");
     }
     else

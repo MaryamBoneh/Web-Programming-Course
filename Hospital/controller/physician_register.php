@@ -1,6 +1,9 @@
 <?php 
     include "../model/database.php";
-
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    }
     $name = $_POST["NAME"];
     $expertise = $_POST["EXPERTISE"];
     $np = $_POST["NP"];
@@ -13,9 +16,15 @@
         $physician_count=$db->query("SELECT * FROM physician WHERE NP_CODE='$np'")->num_rows;
         if($physician_count == 0)
         {
-            $db->query("INSERT INTO physician(NAME,EXPERTISE,NP_CODE,PHONE_NUMBER,PASSWORD) VALUES('$name','$expertise','$np','$phone','$password')");
+            $db->query("INSERT INTO physician (NAME, EXPERTISE, NP_CODE, PHONE_NUMBER, IMAGE, PASSWORD) VALUES('$name','$expertise','$np','$phone', '', '$password')");
             $_SESSION["message"] = "Successfull Register";
             $_SESSION["message_type"] = "success";
+            $_SESSION["physician_code"] = $np;
+            $_SESSION["login_status"] = true;
+            echo "<script type='text/JavaScript'>
+            localStorage.setItem('physician_code', $np);
+            </script>"
+            ;
             header("Location:../view/physician_panel.php");
         }
         else

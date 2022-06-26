@@ -6,7 +6,7 @@
 ?>
 
   <div class="page-banner overlay-dark bg-image" style="background-image: url(/assets/img/bg_image_1.jpg);">
-    <div class="banner-section">
+    <div class="banner-section-other">
       <div class="container text-center wow fadeInUp">
         <nav aria-label="Breadcrumb">
           <ol class="breadcrumb breadcrumb-dark bg-transparent justify-content-center py-0 mb-2">
@@ -29,7 +29,7 @@
               <div class="col-md-6 col-lg-4 py-3 wow zoomIn">
                 <div class="card-doctor">
                   <div class="header">
-                    <img src="assets/img/doctors/<?php echo $physician['IMAGE']; ?>" alt="">
+                    <img src="assets/img/doctors/<?php if (isset($physician["IMAGE"]) & $physician["IMAGE"] != '') { echo $physician["IMAGE"];} else { echo "user.png"; } ?>" alt="">
                   </div>
                   <div class="body">
                     <p class="text-xl mb-0">Dr. <?php echo $physician['NAME']; ?></p>
