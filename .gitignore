@@ -1,0 +1,17 @@
+/DigiKala-Laravel/node_modules
+/DigiKala-Laravel/public/hot
+/DigiKala-Laravel/public/storage
+/DigiKala-Laravel/storage/*.key
+/DigiKala-Laravel/vendor
+/DigiKala-Laravel/.env
+/DigiKala-Laravel/.env.backup
+/DigiKala-Laravel/.phpunit.result.cache
+/DigiKala-Laravel/docker-compose.override.yml
+/DigiKala-Laravel/Homestead.json
+/DigiKala-Laravel/Homestead.yaml
+/DigiKala-Laravel/npm-debug.log
+/DigiKala-Laravel/yarn-error.log
+/DigiKala-Laravel/.idea
+/DigiKala-Laravel/.vscode
+
+
