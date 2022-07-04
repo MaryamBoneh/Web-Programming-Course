@@ -10,12 +10,10 @@
                     <?php if($_SESSION["message_type"]== "success"):?>
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                             <?php echo $_SESSION["message"];?>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     <?php elseif($_SESSION["message_type"]== "error"):?>
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
                             <?php echo $_SESSION["message"];?>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     <?php endif;?>
                 </div>

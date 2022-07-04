@@ -1,10 +1,7 @@
 <?php
     include "header.php";
     include "../model/database.php";
-    if(!isset($_SESSION)) 
-    { 
-        session_start(); 
-    }
+
 ?>
 
 
@@ -27,7 +24,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#"><span class="text-primary">‌Boneh</span>-Health</a>
+      <a class="navbar-brand" href="index.php"><span class="text-primary">‌Boneh</span>-Health</a>
       <!-- <form action="#">
         <div class="input-group input-navbar">
           <div class="input-group-prepend">
