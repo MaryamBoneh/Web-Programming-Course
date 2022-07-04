@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <?php
-    // session_start();
-    // if (!isset($_SESSION['login_status']))
-    // {
-    //     $_SESSION["login_status"] = false;
-    // }
+    if (session_status() === PHP_SESSION_NONE) {
+        session_start();
+    }
+    
 ?>
 
 <!DOCTYPE html>
