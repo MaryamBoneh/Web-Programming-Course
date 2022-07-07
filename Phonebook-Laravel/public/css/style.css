@@ -1,12 +1,15 @@
 body{
-    background-color: gray;
+    margin: 0px !important;
+    background-image: linear-gradient(to bottom left, var(--gradient-color-stops));
+    --gradient-from-color: #4b5545;
+    --gradient-to-color: #191a1d;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(52, 57, 63, 0));
+    background-attachment: fixed;
+    height: 100vh;
+    font-size: 1em !important;
 }
 
-.btn-new-message{
-    position: fixed;
-    bottom: 100px;
-    left: 100px;
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
+th, td{
+    padding-left: 16px !important;
+    color: #fff !important;
 }
