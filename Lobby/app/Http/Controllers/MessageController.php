@@ -1,15 +1,31 @@
 <?php
 
 namespace App\Http\Controllers;
-namespace App\Models\Message;
 
 use Illuminate\Http\Request;
+use App\Models\Message;
 
 class MessageController extends Controller
 {
-    function index(){
-        $message = Message::all();
+    
+        function index()
+        {
+            $messages = Message::all();
 
-        return view("index");
-    }
+            return view("welcome", [
+                "messages" => $messages
+            ]);
+        }
+    
+        function add(Request $request)
+        {
+            $message = new Message();
+            $message ->name = $request["name"];
+            $message ->text = $request["text"];
+            $message->save();
+    
+            return redirect()->to('/');
+        }
+    
+    
 }

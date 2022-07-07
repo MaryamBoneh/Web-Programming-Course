@@ -1,0 +1,9 @@
+body{
+    margin: 0px !important;
+    background-image: linear-gradient(to bottom left, var(--gradient-color-stops));
+    --gradient-from-color: #34393f;
+    --gradient-to-color: #191a1d;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(52, 57, 63, 0));
+    background-attachment: fixed;
+    height: 100vh;
+}
