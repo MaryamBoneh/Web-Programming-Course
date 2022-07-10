@@ -17,4 +17,7 @@ use App\Http\Controllers\QuizzController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/question/{id}', [QuizzController::class, 'index']);
+Route::post('/check-answer', [QuizzController::class, 'check']);
+Route::get('/add-question', [QuizzController::class, 'add_view']);
+Route::post('/add', [QuizzController::class, 'add']);
 

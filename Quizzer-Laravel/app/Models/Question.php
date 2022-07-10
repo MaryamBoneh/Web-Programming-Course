@@ -9,8 +9,8 @@ class Question extends Model
 {
     use HasFactory;
 
-    public function question()
+    public function answers()
     {
-        return $this->belongsTo('App/Model/Question');
+        return $this->hasMany(Answer::class);
     }
 }
